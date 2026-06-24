@@ -1,0 +1,110 @@
+{
+  "claude_code_login": false,
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_MODEL": "deepseek-v4-flash"
+  },
+  "environmentVariables": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4-flash",
+    "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+  },
+  "mcpServers": {
+    "tavily": {
+      "args": [
+        "-y",
+        "@tavily/mcp"
+      ],
+      "command": "npx",
+      "env": {
+        "TAVILY_API_KEY": "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"
+      }
+    },
+    "desktop-touch-mcp": {
+      "args": [
+        "C:\\Users\\Administrator\\.desktop-touch-mcp\\releases\\v1.10.4\\dist\\index.js"
+      ],
+      "command": "node"
+    },
+    "server-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Administrator"
+      ]
+    },
+    "server-memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "server-sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+    "github": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+      },
+      "command": "npx"
+    }
+  },
+  "permissionMode": "bypassPermissions",
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)",
+      "Edit(*)",
+      "Write(*)",
+      "NotebookEdit(*)",
+      "Agent(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "Skill(*)",
+      "AskUserQuestion(*)",
+      "TaskCreate(*)",
+      "TaskUpdate(*)",
+      "TaskGet(*)",
+      "TaskList(*)",
+      "TaskStop(*)",
+      "CronCreate(*)",
+      "CronDelete(*)",
+      "CronList(*)",
+      "EnterPlanMode(*)",
+      "ExitPlanMode(*)"
+    ]
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "skip_login": true,
+  "effortLevel": "xhigh"
+}
