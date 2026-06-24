@@ -1,0 +1,9 @@
+[[plugins]]
+name = "desktop-touch-mcp"
+command = "npx"
+args = ["-y", "@harusame64/desktop-touch-mcp"]
+
+[[plugins]]
+name = "playwright-mcp"
+command = "npx"
+args = ["-y", "@playwright/mcp"]
